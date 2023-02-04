@@ -1,0 +1,105 @@
+/* 01-css-methods, use .first */
+
+.first div {
+ background-color: red;
+ color: white;
+ font-size: 32;
+ text-align: center;
+ font-weight: bold;
+}
+/* 02-class-id-selector, use .second */
+
+.second .parent {
+    background-color: lightpink;
+    font-family: Verdana, DejaVu Sans, sans-serif;
+}
+.second .child {
+    font-size: 24;
+}
+.second div#one {
+    background-color: white;
+    color: blue;
+    font-size: 36;
+}
+.second div#two {
+    background-color: lightgreen;
+    font-size: 24;
+    font-weight: bold;
+}
+/* 03-grouping-selectors, use .third */
+
+.third .click_me,
+.third .no_click_me {
+font-size: 28;
+font-family: Helvetica,'Times New Roman', sans-serif;
+}
+
+.third .click_me {
+    background-color: black;
+    color: white;
+}
+.third .no_click_me {
+    background-color: yellow;
+    color: black;
+}
+/* 04-chaining-selectors, use .fourth */
+.fourth .avatar.proportioned {
+    width: 300;
+    height: auto;
+}
+.fourth .avatar.distorted {
+    width: 200;
+    height: 400;
+}
+/* 05-descendant-combinator, use .fifth */
+.fifth .container .text {
+    background: yellow;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+}
+/* 06-cascade-fix */
+body{
+    font-family:Arial, Helvetica, sans-serif
+  }
+  
+  .para, .small-para {
+    color: hsl(0, 0%, 0%);
+    font-weight: 800;
+  }
+  
+  .para.small-para {
+    font-size: 14px;
+    font-weight: 800;
+  }
+  
+  .para {
+    font-size: 22px;
+  }
+  
+  #confirm-button {
+    background: green;
+    color: white;
+    font-weight: bold;
+  } 
+  
+  .button {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+  }
+  
+  .text.child {
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    font-size: 14px;
+  }
+  
+  div.text {
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    font-weight: 100;
+  }
+
+
+
